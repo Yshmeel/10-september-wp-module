@@ -164,3 +164,9 @@ body {
     color: #000;
     background: #fff;
 }
+
+@media (max-width: 768px) {
+    .header__top--menu {
+        display: none;
+    }
+}
