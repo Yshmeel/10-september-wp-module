@@ -1,0 +1,166 @@
+/*
+Theme Name: PepeRestaurant
+Version: 2022
+Requires at least: 5.0
+Tested up to: 5.8
+Requires PHP: 7.0
+License: GNU General Public License v3 or Later
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: peperestaurant
+
+PepeRestaurant WordPress Theme © 2022
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+.n2-ss-button-container a {
+    transition: .2s ease !important;
+}
+
+.header {
+    background: #1b1b1b;
+    padding: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -85px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header__top--logo img {
+    width: 64px;
+    height: 64px;
+}
+
+.header__top {
+    display: flex;
+}
+
+.header__top--menu {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.header__top--menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__top--menu ul li {
+    list-style: none;
+}
+
+.header__top--menu ul li:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header__top--menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .2s ease;
+    display: block;
+}
+
+.header__top--menu ul li a:hover {
+   transform: scale(1.0666) !important;
+}
+
+body {
+    font-family: 'Roboto','Arial';
+}
+
+.admin-bar .header {
+    height: calc(100vh - 32px);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+}
+
+.modal-dialog {
+    background: #252525;
+    max-width: 500px;
+    padding: 20px;
+    width: 100%;
+}
+
+.reservation-modal-title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    opacity: .7;
+    color: #fff;
+}
+
+.form-group input {
+    padding: 10px;
+    border: none;
+    background: #e8e8e8;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form-button {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 10px 30px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background: #fff;
+}

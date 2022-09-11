@@ -1,0 +1,20 @@
+
+# BEGIN WordPress
+# Директивы (строки) между `BEGIN WordPress` и `END WordPress`
+# созданы автоматически и подлежат изменению только через фильтры WordPress.
+# Сделанные вручную изменения между этими маркерами будут перезаписаны.
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /07_module04/
+RewriteRule ^secure$ wp-admin/ [NC,L]
+RewriteRule ^secure/(.*) wp-admin/$1?%{QUERY_STRING} [L]
+RewriteRule ^wp-admin/reservation/(\d+) wp-admin/admin.php?page=reservation_item&id=$1 [L]
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
